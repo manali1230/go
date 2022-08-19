@@ -1,2 +1,2 @@
 # go
-go lang 
+go lang [https://go.dev/doc/install]
