@@ -1,1 +1,1 @@
-go variable[https://go.dev/ref/spec#Variables]
+[go variable](https://go.dev/ref/spec#Variables)
