@@ -1,7 +1,9 @@
 ## Time
 
 [Packages](https://pkg.go.dev/)
+
 [Time.Format](https://pkg.go.dev/time#example-Time.Format)
+
 [Time.Date](https://pkg.go.dev/time#Time.Date)
 
 This is `Time` go code and I am using Visual Studio WSL[Ubuntu] for performing practical. I have installed `go` Extension in visual studio.
