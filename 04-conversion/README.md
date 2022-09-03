@@ -22,7 +22,6 @@ go run main.go
 The output of the above program is - 
 
 ```
-$ go run main.go 
 Welcome to the Rating !!
 Rate us between 1 to 5
 4.5
