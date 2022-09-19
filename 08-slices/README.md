@@ -90,3 +90,20 @@ false
 [23 45 56 67 78]
 true
 ```
+
+6. Run `remove-value.go` file by using.
+
+```
+go run remove-value.go
+```
+
+## Output
+The output of the above program is - 
+
+```
+>> go run remove-value.go
+
+Remove a value from the Slices based on index
+[Hindi English Marathi Bengali Gujarati]
+[Hindi English Bengali Gujarati]
+```
