@@ -1,6 +1,6 @@
 ## SLICES
 
-[Slices](https://go.dev/tour/moretypes/6)
+[Slices](https://go.dev/tour/moretypes/7)
 
 This is `Slices` go code and I am using Visual Studio WSL[Ubuntu] for performing practical. I have installed `go` Extension in visual studio.
 
