@@ -11,7 +11,7 @@ This is `Time` go code and I am using Visual Studio WSL[Ubuntu] for performing p
 1. this command will generate a `go.mod` file.
 
 ```
-go mod tidy time
+go mod init time
 ```
 
 while writing code if VS Code is showing install tools related to go then click on install.

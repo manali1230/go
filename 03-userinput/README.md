@@ -7,7 +7,7 @@ This is `UserInput` go code and I am using Visual Studio WSL[Ubuntu] for perform
 1. this command will generate a `go.mod` file.
 
 ```
-go mod tidy userinput
+go mod init userinput
 ```
 
 while writing code if VS Code is showing install tools related to go then click on install.
