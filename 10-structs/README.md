@@ -1,6 +1,6 @@
 ## STRUCTS
 
-[Structs]()
+[Structs](https://go.dev/tour/moretypes/2)
 
 This is `Structs` go code and I am using Visual Studio WSL[Ubuntu] for performing practical. I have installed `go` Extension in visual studio.
 
