@@ -1,6 +1,7 @@
 # go
 [go lang](https://go.dev/doc/install)
-[doc](https://go.dev/ref/spec)
+
+[go lang doc](https://go.dev/ref/spec)
 ## Install Go on Linux
 
 1. Download it
