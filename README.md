@@ -2,6 +2,8 @@
 [go lang](https://go.dev/doc/install)
 
 [go lang doc](https://go.dev/ref/spec)
+
+[Followed](https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa)
 ## Install Go on Linux
 
 1. Download it
