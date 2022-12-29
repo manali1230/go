@@ -68,3 +68,28 @@ ByteCount :  25
 {"message":"Hello World"}
 ```
 
+3. Run `postrequest.go` file by using.
+
+```
+go run postrequest.go
+```
+
+## Output
+
+```
+Post Request
+{"Name":"Manali","Price":3000,"Route":"Train"}
+```
+
+4. Run `postformrequest.go` file by using.
+
+```
+go run postformrequest.go
+```
+
+## Output
+
+```
+Post Form Request
+{"City":"Gurgaon","Name":"Manali Jain","email":"manali@email.com"}
+```
