@@ -55,3 +55,55 @@ Json Data
         }
 ]
 ```
+
+4. Run `small-key.go` file by using.
+
+```
+go run small-key.go
+```
+
+## Output
+
+```
+Json Data
+[
+        {
+                "name": "Python Course",
+                "price": 2000,
+                "CourseName": "Python",
+                "tutor": [
+                        "Rina",
+                        "Mina"
+                ]
+        },
+        {
+                "name": "Go Course",
+                "price": 3000,
+                "CourseName": "Go",
+                "tutor": [
+                        "Manoj,Saroj"
+                ]
+        }
+]
+```
+
+5. Run `decode-json.go` file by using.
+
+```
+go run decode-json.go
+```
+
+## Output
+
+```
+Decode Json
+Json is Valid
+
+main.course{Name:"Go Course", Price:3000, CourseName:"Go", Tutor:[]string{"Manoj,Saroj"}}
+
+map[string]interface {}{"CourseName":"Go", "name":"Go Course", "price":3000, "tutor":[]interface {}{"Manoj,Saroj"}}
+Key : tutor and value : [Manoj,Saroj] => datatype : []interface {}
+Key : name and value : Go Course => datatype : string
+Key : price and value : 3000 => datatype : float64
+Key : CourseName and value : Go => datatype : string
+```
