@@ -2,7 +2,7 @@
 
 [JSON](https://go.dev/blog/json)
 
-This is `json` go code and I am using Visual Studio WSL[Ubuntu] for performing practical. I have installed `go` Extension in visual studio.
+This is `json` go code and I am using Visual Studio Code for performing practical. I have installed `go` Extension in visual studio.
 
 1. this command will generate a `go.mod` file.
 

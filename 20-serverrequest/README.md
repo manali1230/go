@@ -42,7 +42,7 @@ Go to extentions and search for `Thunder Client` and then install it.
 
 [strings.builder](https://pkg.go.dev/strings#example-Builder)
 
-This is `serverrequest` go code and I am using Visual Studio WSL[Ubuntu] for performing practical. I have installed `go` Extension in visual studio.
+This is `serverrequest` go code and I am using Visual Studio Code for performing practical. I have installed `go` Extension in visual studio.
 
 1. this command will generate a `go.mod` file.
 
