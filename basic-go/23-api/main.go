@@ -64,7 +64,7 @@ func getOneCourses(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-func CreateOneCourses(w http.ResponseWriter, r *http.Request) {
+func createOneCourses(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Create One Courses")
 	w.Header().Set("Content-Type", "application/json")
 	// body is empty
@@ -88,7 +88,7 @@ func CreateOneCourses(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-func UpdateOneCourses(w http.ResponseWriter, r *http.Request) {
+func updateOneCourses(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Create One Courses")
 	w.Header().Set("Content-Type", "application/json")
 
@@ -106,6 +106,20 @@ func UpdateOneCourses(w http.ResponseWriter, r *http.Request) {
 			json.NewEncoder(w).Encode(course)
 			return
 
+		}
+	}
+}
+
+func deleteOneCourses(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Create One Courses")
+	w.Header().Set("Content-Type", "application/json")
+
+	param := mux.Vars(r)
+
+	for index, course := range courses {
+		if course.CourseID == param["id"] {
+			courses = append(courses[:index], courses[index+1:]...)
+			break
 		}
 	}
 }
