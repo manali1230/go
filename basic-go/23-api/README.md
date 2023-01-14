@@ -37,33 +37,39 @@ go build .
 CRUD OPERATIONS
 ```
 5. hit the url `http://localhost:1000` and get the result .
-![Input](./images/api-web.png){height=200px width=100px}
+![Input](img/images/api-web.png)
 
 api call in thunder client
-![Input](./images/api-call-thunder-client.png){height=200px width=100px}
+![Input](img/images/api-call-thunder-client.png)
 
 ### Operations output
 
 1. Get list of all courses available.
-![Input](./images/getAllCourses.png){height=200px width=100px}
+![Input](img/images/getAllCourses.png)
 
 2. Get only one course
-![Input](./images/getOneCourse.png){height=200px width=100px}
+![Input](img/images/getOneCourse.png)
 
 3. Create one course
-![Input](./images/createOneCourse.png){height=200px width=100px}
+![Input](img/images/createOneCourse.png)
 
 check course created or not
-![Input](./images/getAllCourses-after-createOneCourse.png){height=200px width=100px}
+![Input](img/images/getAllCourses-after-createOneCourse.png)
 
 4. Update one course
-![Input](./images/updateOneCourse.png){height=200px width=100px}
+![Input](img/images/updateOneCourse.png)
 
 check course updated or not
-![Input](./images/getAllCourses-after-updateOneCourse.png){height=200px width=100px}
+![Input](img/images/getAllCourses-after-updateOneCourse.png)
 
 5. Delete one course
-![Input](./images/deleteOneCourse.png){height=200px width=100px}
+![Input](img/images/deleteOneCourse.png)
 
 check course deleted or not
-![Input](./images/checkDeleteCourse.png){:height="36px" width="36px"}
+![Input](img/images/checkDeleteCourse.png)
+
+<style type="text/css">
+    img {
+        width: 250px;
+    }
+</style>
