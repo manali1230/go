@@ -37,35 +37,43 @@ go build .
 CRUD OPERATIONS
 ```
 5. hit the url `http://localhost:1000` and get the result .
-![Input](./images/api-web.png)
+
+<img src="./images/api-web.png" width="300">
 
 api call in thunder client
-![Input](./images/api-call-thunder-client.png)
+
+<img src="./images/api-call-thunder-client.png" width="300">
 
 ### Operations output
 
 1. Get list of all courses available.
-![Input](./images/getAllCourses.png)
+
+<img src="./images/getAllCourses.png" width="300">
 
 2. Get only one course
-![Input](./images/getOneCourse.png)
+
+<img src="./images/getOneCourse.png" width="300">
 
 3. Create one course
-![Input](./images/createOneCourse.png)
+
+<img src="./images/createOneCourse.png" width="300">
 
 check course created or not
-![Input](./images/getAllCourses-after-createOneCourse.png)
+
+<img src="./images/getAllCourses-after-createOneCourse.png" width="300">
 
 4. Update one course
-![Input](./images/updateOneCourse.png)
+
+<img src="./images/updateOneCourse.png" width="300">
 
 check course updated or not
-![Input](./images/getAllCourses-after-updateOneCourse.png)
+
+<img src="./images/getAllCourses-after-updateOneCourse.png" width="300">
 
 5. Delete one course
-![Input](./images/deleteOneCourse.png)
 
-check course deleted or not
-![Input](./images/checkDeleteCourse.png)
+<img src="./images/deleteOneCourse.png" width="300">
 
-<img src="./images/checkDeleteCourse.png" width="500">
+check course deleted or not\
+
+<img src="./images/checkDeleteCourse.png" width="300">
