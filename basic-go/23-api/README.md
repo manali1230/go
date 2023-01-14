@@ -38,21 +38,21 @@ CRUD OPERATIONS
 ```
 5. hit the url `http://localhost:1000` and get the result .
 
-<img src="./images/api-web.png" width="300">
+<img src="./images/api-web.png" width="400">
 
 api call in thunder client
 
-<img src="./images/api-call-thunder-client.png" width="300">
+<img src="./images/api-call-thunder-client.png" width="400">
 
 ### Operations output
 
 1. Get list of all courses available.
 
-<img src="./images/getAllCourses.png" width="300">
+<img src="./images/getAllCourses.png" width="400">
 
 2. Get only one course
 
-<img src="./images/getOneCourse.png" width="300">
+<img src="./images/getOneCourse.png" width="400">
 
 3. Create one course
 
