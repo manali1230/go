@@ -66,4 +66,4 @@ check course updated or not
 ![Input](./images/deleteOneCourse.png){height=200px width=100px}
 
 check course deleted or not
-![Input](./images/checkDeleteCourse.png){height=200px width=100px}
+![Input](./images/checkDeleteCourse.png){:height="36px" width="36px"}
