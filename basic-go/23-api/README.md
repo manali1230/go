@@ -68,4 +68,4 @@ check course updated or not
 check course deleted or not
 ![Input](./images/checkDeleteCourse.png)
 
-<img src="./images/checkDeleteCourse.png" width="48">
+<img src="./images/checkDeleteCourse.png" width="500">
