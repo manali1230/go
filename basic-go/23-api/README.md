@@ -23,3 +23,47 @@ go mod init github.com/manali1230/api
 >> go get -u github.com/gorilla/mux
 go: added github.com/gorilla/mux v1.8.0
 ```
+
+3. build api
+
+```
+go build .
+```
+
+4. run go
+
+```
+>> go run main.go 
+CRUD OPERATIONS
+```
+5. hit the url `http://localhost:1000` and get the result .
+[!Input](./images/api-web.png)
+
+api call in thunder client
+[!Input](./images/api-call-thunder-client.png)
+
+### Operations output
+
+1. Get list of all courses available.
+[!Input](./images/getAllCourses.png)
+
+2. Get only one course
+[!Input](./images/getOneCourse.png)
+
+3. Create one course
+[!Input](./images/createOneCourse.png)
+
+check course created or not
+[!Input](./images/getAllCourses-after-createOneCourse.png)
+
+4. Update one course
+[!Input](./images/updateOneCourse.png)
+
+check course updated or not
+[!Input](./images/getAllCourses-after-updateOneCourse.png)
+
+5. Delete one course
+[!Input](./images/deleteOneCourse.png)
+
+check course deleted or not
+[!Input](./images/checkDeleteCourse.png)

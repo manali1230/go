@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"math/rand"
 	"net/http"
 	"strconv"
@@ -13,10 +14,11 @@ import (
 
 // model
 type Course struct {
-	CourseID    string  `json:"courseid"`
-	CourseName  string  `json:"coursename"`
-	CoursePrice int     `json:"price"`
-	Author      *Author `json:"author"`
+	CourseID    string `json:"courseid"`
+	CourseName  string `json:"coursename"`
+	CoursePrice int    `json:"price"`
+	// CoursePrice int     `json:"-"`			// uncomment only of don't want to show price as json response
+	Author *Author `json:"author"`
 }
 
 type Author struct {
@@ -34,7 +36,23 @@ func (c *Course) isEmpty() bool {
 }
 
 func main() {
+	fmt.Println("CRUD OPERATIONS")
+	r := mux.NewRouter()
 
+	// seeding
+	courses = append(courses, Course{CourseID: "1", CourseName: "Python", CoursePrice: 5999, Author: &Author{Fullname: "Manali Jain", Website: "test.in"}})
+	courses = append(courses, Course{CourseID: "2", CourseName: "Go", CoursePrice: 9999, Author: &Author{Fullname: "Manali Jain", Website: "test.in"}})
+
+	// routing
+	r.HandleFunc("/", backend).Methods("GET")
+	r.HandleFunc("/courses", getAllCourses).Methods("GET")
+	r.HandleFunc("/courses/{id}", getOneCourses).Methods("GET")
+	r.HandleFunc("/courses", createOneCourses).Methods("POST")
+	r.HandleFunc("/courses/{id}", updateOneCourses).Methods("PUT")
+	r.HandleFunc("/courses/{id}", deleteOneCourses).Methods("DELETE")
+
+	// listen port
+	log.Fatal(http.ListenAndServe(":1000", r))
 }
 
 // backend route
@@ -56,7 +74,8 @@ func getOneCourses(w http.ResponseWriter, r *http.Request) {
 	// loop through courses, find matching id and return the response
 	for _, course := range courses {
 		if course.CourseID == param["id"] {
-			json.NewEncoder(w).Encode(courses)
+			// fmt.Println("got it")
+			json.NewEncoder(w).Encode(course)
 			return
 		}
 	}
@@ -89,7 +108,7 @@ func createOneCourses(w http.ResponseWriter, r *http.Request) {
 }
 
 func updateOneCourses(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Create One Courses")
+	fmt.Println("Update One Course")
 	w.Header().Set("Content-Type", "application/json")
 
 	// grab id from request
@@ -111,7 +130,7 @@ func updateOneCourses(w http.ResponseWriter, r *http.Request) {
 }
 
 func deleteOneCourses(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Create One Courses")
+	fmt.Println("Delete One Course")
 	w.Header().Set("Content-Type", "application/json")
 
 	param := mux.Vars(r)
