@@ -40,3 +40,6 @@ MongoDB Database -
 
 <img src="./images/database.png" width="600">
 
+## Update Go Tools
+In Visual Studio press `command + shift + P` then select `GO: Install/Update Tools` >> select the required one and press `enter` or click `ok`.
+
