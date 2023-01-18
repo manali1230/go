@@ -6,6 +6,8 @@ import (
 	"log"
 
 	"github.com/manali1230/mongoapi/model"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -43,4 +45,17 @@ func insertOneRecord(movie model.Netflix) {
 		log.Fatal(err)
 	}
 	fmt.Println("Data inserted successfully with id: ", inserted.InsertedID)
+}
+
+// update one record
+func updateOneMovie(movieID string) {
+	id, _ := primitive.ObjectIDFromHex(movieID)
+	filter := bson.M{"_id": id}
+	update := bson.M{"$set": bson.M{"watched": true}}
+
+	result, err := collection.UpdateOne(context.Background(), filter, update)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Modified Count: ", result.ModifiedCount)
 }
