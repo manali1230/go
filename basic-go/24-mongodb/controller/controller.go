@@ -136,7 +136,7 @@ func DeleteOneMovie(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Allow-Control-Allow-Methods", "DELETE")
 
 	params := mux.Vars(r)
-	DeleteOneMovie(params["id"])
+	deleteOneRecord(params["id"])
 	json.NewEncoder(w).Encode(params["id"])
 }
 
