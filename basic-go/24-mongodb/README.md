@@ -69,7 +69,7 @@ Delete A Movie
 
 Delete All Movies
 
-<img src="./images/delete-all-movie.png" width="600">
+<img src="./images/delete-all-movies.png" width="600">
 
 4. Get Method
 
