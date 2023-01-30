@@ -43,6 +43,20 @@ MongoDB Database -
 ## Update Go Tools
 In Visual Studio press `command + shift + P` then select `GO: Install/Update Tools` >> select the required one and press `enter` or click `ok`.
 
+## Build
+Build go by following command - 
+
+```
+go build main.go
+```
+
+## Run
+Run go by following command - 
+
+```
+go run main.go
+```
+
 ## Thunder Client Requests
 
 1. Post Method
