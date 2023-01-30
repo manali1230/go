@@ -43,3 +43,34 @@ MongoDB Database -
 ## Update Go Tools
 In Visual Studio press `command + shift + P` then select `GO: Install/Update Tools` >> select the required one and press `enter` or click `ok`.
 
+## Thunder Client Requests
+
+1. Post Method
+
+<img src="./images/post-movie-watched.png" width="600">
+
+<img src="./images/post-movie-notwatched.png" width="600">
+
+<img src="./images/mongodb-data-post.png" width="600">
+
+2. Put Method
+
+<img src="./images/put-movie.png" width="600">
+
+<img src="./images/put-watched-changed.png" width="600">
+
+3. Delete Method
+
+Delete A Movie
+
+<img src="./images/delete-one-movie.png" width="600">
+
+<img src="./images/delete-a-movie.png" width="600">
+
+Delete All Movies
+
+<img src="./images/delete-all-movie.png" width="600">
+
+4. Get Method
+
+<img src="./images/get-movies.png" width="600">

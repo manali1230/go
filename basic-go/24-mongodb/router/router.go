@@ -11,6 +11,6 @@ func Router() *mux.Router {
 	router.HandleFunc("/post/movies", controller.CreateMovie).Methods("POST")
 	router.HandleFunc("/put/movies/{id}", controller.MarkedAsWatched).Methods("PUT")
 	router.HandleFunc("/deleteone/movies/{id}", controller.DeleteOneMovie).Methods("DELETE")
-	router.HandleFunc("/deleteall/movies/{id}", controller.DeleteAllMovies).Methods("DELETE")
+	router.HandleFunc("/deleteall/movies", controller.DeleteAllMovies).Methods("DELETE")
 	return router
 }
