@@ -1,6 +1,6 @@
 # WaitGroups
 
-[waitGroups](https://pkg.go.dev/sync)
+[waitGroups & Mutex](https://pkg.go.dev/sync)
 
 1. run the command to create go.mod file
 
@@ -25,4 +25,5 @@ https://go.dev Endpoint !
 200 is the status code for https://www.facebook.com
 200 is the status code for https://go.dev
 200 is the status code for https://google.com
+[test signals https://www.youtube.com https://www.facebook.com https://go.dev https://google.com]
 ```

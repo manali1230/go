@@ -6,7 +6,9 @@ import (
 	"sync"
 )
 
+var signals = []string{"test signals"}
 var wg sync.WaitGroup // pointer
+var mutex sync.Mutex  // pointer
 
 func main() {
 	websiteList := []string{
@@ -22,6 +24,7 @@ func main() {
 		wg.Add(1)
 	}
 	wg.Wait()
+	fmt.Println(signals)
 }
 
 func getStatusCode(endpoint string) {
@@ -31,6 +34,9 @@ func getStatusCode(endpoint string) {
 	if err != nil {
 		fmt.Printf("%s Endpoint failed !\n", endpoint)
 	} else {
+		mutex.Lock()
+		signals = append(signals, endpoint)
+		mutex.Unlock()
 		fmt.Printf("%d is the status code for %s\n", response.StatusCode, endpoint)
 	}
 }
