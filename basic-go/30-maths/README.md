@@ -1,6 +1,7 @@
 # Maths
 
-[Maths](https://go.dev/doc/effective_go#channels)
+[Maths](https://pkg.go.dev/math/rand)
+[Crypto](https://pkg.go.dev/crypto/rand)
 
 1. run the command to create go.mod file
 
