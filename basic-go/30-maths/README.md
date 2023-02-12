@@ -17,5 +17,6 @@ go run .
 ### output
 
 ```
-
+Sum of numbers :  5
+4
 ```
