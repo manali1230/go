@@ -1,6 +1,6 @@
 # Maths
 
-[Maths](https://pkg.go.dev/math/rand)
+[Maths](https://pkg.go.dev/math/rand)<br>
 [Crypto](https://pkg.go.dev/crypto/rand)
 
 1. run the command to create go.mod file
